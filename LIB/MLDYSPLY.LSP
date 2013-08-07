@@ -1,0 +1,25 @@
+ ; display info screen abbout current MLd
+ ;
+ (defun mldisply ( mldef / dash el line )
+ (textscr)
+ (repeat 24 (prompt "\n"))
+ (setq dash "\n")(repeat 70 (setq dash (strcat dash "-")))
+ (prompt dash)
+ (prompt "\nInformation screen for current Multiple Line Definition")
+ (prompt dash)
+	(prompt (strcat "\nCurrent MLD name     : " (car mldef)))
+        (prompt (strcat "\nCurrent justification: " (mldjust mldef)))
+        (prompt (strcat "\nCurrent elevation    : " 
+	                 (rtos (getvar "elevation"))))
+ (prompt dash)
+ (prompt "\nMLD structure :")
+ (prompt dash)
+ (foreach line (cadr mldef)
+     (prompt "\n")
+     (foreach el line (princ el ) (princ "     "))
+ )
+ (prompt dash)
+ (getstring "\nPress Return key when finished please ...")
+ (graphscr)
+ (princ)
+ ) ; mldysply

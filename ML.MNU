@@ -1,0 +1,48 @@
+
+
+***BUTTONS
+;
+$p1=*
+^C^C
+^B
+^O
+^G
+^D
+^E
+^T
+***AUX1
+;
+$p1=*
+^C^C
+^B
+^O
+^G
+^D
+^E
+^T
+
+***POP1
+**mld
+[ * MLD * ]
+[NHS001   ]^P(setq n 1) ^P
+[---------]
+[NHS002   ]^P(setq n 2) ^P
+[---------]
+[NHS003   ]^P(setq n 3) ^P
+[---------]
+[NHS004   ]^P(setq n 4) ^P
+[---------]
+[NHS005   ]^P(setq n 5) ^P
+[---------]
+
+***SCREEN
+**S
+
+
+CHOOSE 
+NEW
+MULTY
+LINE
+PLEASE
+
+

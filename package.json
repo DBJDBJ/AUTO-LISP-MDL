@@ -1,0 +1,15 @@
+{
+  "name": "dbj AutoLISP MDL system",
+  "version": "1.0.0",
+  "author" : {
+		    "name" : "dbj", "web" : "http://dbj.org"
+	} ,
+  "description" : "AutoLISP Multi Line Drawing (MDL)",
+  "repository" : {
+		  "type" : "git" ,
+		  "url"  : "https://github.com/DBJDBJ/AUTO-LISP-RUN.git"
+  },
+  "keywords": ["AutoCAD", "AutoLISP", "LISP"],
+  "analyze" : false,
+  "license" : "MIT"
+}

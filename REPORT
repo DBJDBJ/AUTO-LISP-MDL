@@ -1,0 +1,138 @@
+AutoLISP compiler version 3.0
+Serial Number 79-400075   
+Copyright (C) 1989,1990 Autodesk Ltd.
+286 DOS
+DTR code size:  28 inline data:  8 
+#DXF code size:  123 inline data:  0 
+MLDERR code size:  118 inline data:  64 
+MLD2 code size:  169 inline data:  68 
+MLD2#5 code size:  923 inline data:  380 
+MLD2#4 code size:  377 inline data:  81 
+MLD2#3 code size:  290 inline data:  0 
+MLD2#3#0 code size:  130 inline data:  0 
+MLD2#2 code size:  74 inline data:  33 
+MLD2#1 code size:  44 inline data:  70 
+MLD2#0 code size:  306 inline data:  188 
+MLDCONNECT code size:  496 inline data:  67 
+LLEN code size:  53 inline data:  0 
+10CUTBASE code size:  98 inline data:  0 
+CUTBASE code size:  98 inline data:  0 
+MLDCUT code size:  239 inline data:  15 
+MLDCUT#0 code size:  124 inline data:  8 
+MLDFILLET code size:  491 inline data:  94 
+MLDJUSTIFY code size:  345 inline data:  161 
+MLDJUST code size:  133 inline data:  8 
+GETMLDEF code size:  80 inline data:  0 
+MLDLTP code size:  43 inline data:  0 
+MLDOFF code size:  43 inline data:  0 
+MLDWID code size:  76 inline data:  0 
+MLDLYR code size:  43 inline data:  0 
+MLDLAYON code size:  147 inline data:  45 
+SUBNEWOFF code size:  80 inline data:  0 
+MLDN code size:  269 inline data:  64 
+MLDN#3 code size:  343 inline data:  76 
+MLDN#2 code size:  317 inline data:  281 
+MLDN#1 code size:  234 inline data:  27 
+MLDN#0 code size:  92 inline data:  5 
+MLDN#0#0 code size:  159 inline data:  0 
+ARC1P code size:  68 inline data:  0 
+ARC2P code size:  68 inline data:  0 
+A2ECS code size:  128 inline data:  0 
+ARC1A code size:  149 inline data:  0 
+ARC2A code size:  149 inline data:  0 
+MLDARC code size:  326 inline data:  111 
+MLDARC#0 code size:  392 inline data:  38 
+ARCOMM code size:  210 inline data:  79 
+ARCEND code size:  496 inline data:  268 
+ARCENTER code size:  296 inline data:  186 
+MIDP code size:  126 inline data:  0 
+ARCOP code size:  84 inline data:  0 
+OPOSITE code size:  406 inline data:  5 
+LAC code size:  1042 inline data:  0 
+LA code size:  606 inline data:  0 
+LA#0 code size:  60 inline data:  0 
+MLDISPLY code size:  442 inline data:  208 
+MLDELEV code size:  64 inline data:  0 
+MLDELEV#0 code size:  268 inline data:  203 
+LINEUCS code size:  86 inline data:  7 
+P2E code size:  45 inline data:  10 
+A2E code size:  156 inline data:  4 
+UCSANG code size:  62 inline data:  8 
+RTOD code size:  16 inline data:  8 
+ALIGN code size:  43 inline data:  0 
+ALIGN#1 code size:  220 inline data:  0 
+ALIGN#0 code size:  10 inline data:  0 
+C:MLD2 code size:  7 inline data:  0 
+C:MLDN code size:  7 inline data:  0 
+
+Declared special:  ALIGNM ALIGN#1 BSLDXF ALIGN#0 ASKELEV MLDELEV#0 CLOSER LA#0 CCW ARCOFF MLDARC#0 RETURN NOCOMMENT MLDN#0#0 MLDGET MLDN#3 MLDSHOWNAMES MLDN#2 MLDNAMES MLDN#1 READLL MLDN#0 NORMP MLDCUT#0 RUN_DEBUG MLDERR PLL MLD2#3#0 MLDCMD MLD2#5 MLDLINE MLD2#4 MPLL MLD2#3 MIDPNT MLD2#2 REFPNT MLD2#1 MLDBEGIN MLD2#0 MLDEF *OLDERR* 
+
+Warning -- improper special declaration order :   RETURN 
+
+Starting second pass...
+ 
+
+DTR code size:  28 inline data:  8 
+#DXF code size:  123 inline data:  0 
+MLDERR code size:  118 inline data:  64 
+MLD2 code size:  169 inline data:  68 
+MLD2#11 code size:  923 inline data:  380 
+MLD2#10 code size:  403 inline data:  81 
+MLD2#9 code size:  323 inline data:  0 
+MLD2#9#0 code size:  130 inline data:  0 
+MLD2#8 code size:  74 inline data:  33 
+MLD2#7 code size:  44 inline data:  70 
+MLD2#6 code size:  306 inline data:  188 
+MLDCONNECT code size:  515 inline data:  67 
+LLEN code size:  53 inline data:  0 
+10CUTBASE code size:  98 inline data:  0 
+CUTBASE code size:  98 inline data:  0 
+MLDCUT code size:  268 inline data:  15 
+MLDCUT#1 code size:  124 inline data:  8 
+MLDFILLET code size:  491 inline data:  94 
+MLDJUSTIFY code size:  345 inline data:  161 
+MLDJUST code size:  133 inline data:  8 
+GETMLDEF code size:  80 inline data:  0 
+MLDLTP code size:  43 inline data:  0 
+MLDOFF code size:  43 inline data:  0 
+MLDWID code size:  102 inline data:  0 
+MLDLYR code size:  43 inline data:  0 
+MLDLAYON code size:  147 inline data:  45 
+SUBNEWOFF code size:  80 inline data:  0 
+MLDN code size:  269 inline data:  64 
+MLDN#7 code size:  375 inline data:  76 
+MLDN#6 code size:  347 inline data:  281 
+MLDN#5 code size:  260 inline data:  27 
+MLDN#4 code size:  92 inline data:  5 
+MLDN#4#0 code size:  159 inline data:  0 
+ARC1P code size:  68 inline data:  0 
+ARC2P code size:  68 inline data:  0 
+A2ECS code size:  128 inline data:  0 
+ARC1A code size:  149 inline data:  0 
+ARC2A code size:  149 inline data:  0 
+MLDARC code size:  326 inline data:  111 
+MLDARC#1 code size:  392 inline data:  38 
+ARCOMM code size:  210 inline data:  79 
+ARCEND code size:  496 inline data:  268 
+ARCENTER code size:  296 inline data:  186 
+MIDP code size:  126 inline data:  0 
+ARCOP code size:  84 inline data:  0 
+OPOSITE code size:  406 inline data:  5 
+LAC code size:  1042 inline data:  0 
+LA code size:  606 inline data:  0 
+LA#1 code size:  60 inline data:  0 
+MLDISPLY code size:  442 inline data:  208 
+MLDELEV code size:  64 inline data:  0 
+MLDELEV#1 code size:  268 inline data:  203 
+LINEUCS code size:  86 inline data:  7 
+P2E code size:  45 inline data:  10 
+A2E code size:  156 inline data:  4 
+UCSANG code size:  62 inline data:  8 
+RTOD code size:  16 inline data:  8 
+ALIGN code size:  43 inline data:  0 
+ALIGN#3 code size:  220 inline data:  0 
+ALIGN#2 code size:  10 inline data:  0 
+C:MLD2 code size:  7 inline data:  0 
+C:MLDN code size:  7 inline data:  0 
+
+Declared special:  ALIGN#3 ALIGN#2 MLDELEV#1 LA#1 MLDARC#1 MLDN#4#0 MLDN#7 MLDN#6 MLDN#5 MLDN#4 MLDCUT#1 MLD2#9#0 MLD2#11 MLD2#10 MLD2#9 MLD2#8 MLD2#7 MLD2#6 
