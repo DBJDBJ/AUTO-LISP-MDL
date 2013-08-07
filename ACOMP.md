@@ -163,8 +163,8 @@ You will need to specify
 (special '(a)) in FILE1.LSP
 
 
-QUOTE LAMBDA -> FUNCTION LAMBDA  [changed July 98]  
-==================================================  
+##QUOTE LAMBDA -> FUNCTION LAMBDA  [changed July 98]  
+
 
 In some cases      
             (apply '(lambda (x) (* x x)) (list 1))    
@@ -206,8 +206,9 @@ Therefore you can use the assumption:
 			)
 
 
-SELF MODIFYING CODE
--------------------
+##SELF MODIFYING CODE   
+
+
 Is forbidden within compiled functions. Use instead plain lisp code.
 (simply append uncompiled code to compiled lispfiles)   
 
@@ -215,22 +216,25 @@ Ex:
 			COPY TEST.BI4+SELFMOD.LSP TEST.LSP
 
 
-MAXIMUM NUMBER OF ARGUMENTS
----------------------------
-must not exceed 32 for all user defined and the following internal functions:
+##MAXIMUM NUMBER OF ARGUMENTS   
 
-+ - * / = /= < <= > >= and append bool expt list logand logoir lsh mapcar max
-min or rem strcat strlen
+must not exceed 32 for all user defined and the following internal functions:   
+
+			+ - * / = /= < <= > >= and append bool expt list 
+			logand logoir lsh mapcar max
+			min or rem strcat strlen    
 
 To the follwoing functions these restrictions do not apply: (since the
-interpretation of most if these functions is handled over to plain autolisp)
+interpretation of most if these functions is handled over to plain autolisp)  
 
-command cond debug defun foreach lambda progn repeat setq trace undebug
-untrace while
+			command cond debug defun foreach lambda progn 
+			repeat setq trace undebug
+			untrace while
 
 
-Enhancing the internal stacksize: COMPSTACK (only for < R12)
-------------------------------------------------------------
+##Enhancing the internal stacksize: COMPSTACK (only for < R12)  
+
+
 The default stacksize is 4000 for plain (extended) AutoLISP (which should
 work, otherwise try first to simplify your functions).
 On the error message
@@ -244,8 +248,8 @@ Ex:
 
 
 
-Mixed code
-----------
+##Mixed code   
+
 If you intend to use compiled and uncompiled code
 the following construct would be useful:   
 
@@ -257,8 +261,9 @@ the following construct would be useful:
 
 
 
-Debugger
---------
+##Debugger  
+
+
 The Lisp Compiler for R10 and R11 had debugging functions included, a break
 with stepper, conditional breakpoints, which are not supported anymore
 with the R12 compatible release. You could still use the old (better)
@@ -267,8 +272,9 @@ small bug, which prevents you from retrieving attribute data.
 (cannot entnext on complex entities)
 
 
-List of new reserved indentifiers
----------------------------------
+##List of new reserved identifiers  
+
+
 
 *BACKTRACE*     prints out the stack frame (backtrace) on error if no *ERROR*
                 function is defined, default: T (only R10)
@@ -312,8 +318,9 @@ PAGETB
 VSUBR           some new internal node types, returned by TYPE
 
 
-Reflections
------------
+##Reflections   
+
+
 "Compiled BI4 Lisps" are encrypted Lisp files, in a byte-code compiled format,
 where some time critical functions like (cond), (setq), (if), (while), (and),
 (or) - basically conditional, logical and assignment functions - are handled
@@ -346,8 +353,9 @@ for years now.
 You can reach the authors at <basis@access.digex.net>
 but dont ask them about ACOMP!
 
-Bug in the US version with ACADLC
----------------------------------
+##Bug in the US version with ACADLC  
+
+
 You will encounter with the domestic unlocked release of AutoCAD
 the following problem:
   ACAD.LSP is not loaded at startup
@@ -359,8 +367,9 @@ Workaround:
   <menu>.mnl does not do this (it often happens, what a mess),
   load acad.lsp from there.
 
-R12 Windows ACADLC.EXE
-----------------------
+##R12 Windows ACADLC.EXE  
+
+
 For the international version of ACADWIN 12 the interpreter for
 compiled lisps ACADLC.EXE was delivered on the 5th disk.
   ftp://xarch.tu-graz.ac.at/pub/autocad/bi4/acadlc_win.zip
@@ -370,7 +379,7 @@ I never tested it personally, I use Vital Lisp now. If you experience
 any strange phenomenon other than expired please tell me, to keep the
 docs uptodate.
 
-----
+-------------------------------------------
 by Reini Urban <rurban@sbox.tu-graz.ac.at>
 http://xarch.tu-graz.ac.at/autocad/bi4/acomp.txt
 created: 19.Sep 95, last update: 24.Jul 98
