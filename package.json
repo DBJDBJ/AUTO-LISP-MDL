@@ -7,7 +7,7 @@
   "description" : "AutoLISP Multi Line Drawing (MDL)",
   "repository" : {
 		  "type" : "git" ,
-		  "url"  : "https://github.com/DBJDBJ/AUTO-LISP-RUN.git"
+		  "url"  : "https://github.com/DBJDBJ/AUTO-LISP-MDL.git"
   },
   "keywords": ["AutoCAD", "AutoLISP", "LISP"],
   "analyze" : false,
