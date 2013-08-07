@@ -7,7 +7,8 @@ ACOMP - The AutoLisp Compiler for AutoCad R10-R12 DOS/Windows
 *Parts (quoted) are from the official acomp documentation.*   
 *http://xarch.tu-graz.ac.at/autocad/bi4/acomp.txt*   
 
-New:
+New:  
+
 1) Fixed docs for FUNCTION   
 2) Beware: bug on US versions -> see at the end   
 3) ACADLC was never officially supported for the US version, only for the international version!   
