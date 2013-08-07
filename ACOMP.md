@@ -163,8 +163,8 @@ You will need to specify
 (special '(a)) in FILE1.LSP
 
 
-QUOTE LAMBDA -> FUNCTION LAMBDA  [changed July 98]
--------------------------------
+QUOTE LAMBDA -> FUNCTION LAMBDA  [changed July 98]  
+==================================================  
 
 In some cases   
             (apply '(lambda (x) (* x x)) (list 1))
