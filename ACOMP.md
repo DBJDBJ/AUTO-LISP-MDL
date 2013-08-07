@@ -142,13 +142,13 @@ second compiler pass.
 
 Example:
 
-FILE1.LSP:
+FILE1.LSP:   
         (defun inita (/ a)
               (setq a 1)
            (foo)
         )
 
-FILE2.LSP:  
+FILE2.LSP:     
        (defun foo nil
               (+ a 1)
             )
@@ -166,13 +166,13 @@ You will need to specify
 QUOTE LAMBDA -> FUNCTION LAMBDA  [changed July 98]
 -------------------------------
 
-In some cases
+In some cases   
             (apply '(lambda (x) (* x x)) (list 1))
 
-which is the same as
+which is the same as   
             (apply (quote (lambda (x) (* x x))) (list 1))
 
-should be replaced with:
+should be replaced with:   
             (apply (function (lambda (x) (* x x))) (list 1))
 
 Here FUNCTION is the same as a QUOTEd LAMBDA, but the compiler understands
@@ -186,14 +186,14 @@ which take function arguments such as apply or mapcar, but NOT with
 user supplied functions, such as (remove-if) or such.
 
 Note:
-In Common Lisp FUNCTION (or #') is used like this:
+In Common Lisp FUNCTION (or #') is used like this:   
           (apply #'(lambda (x) (* x x)) (list 1))
-which expands to
+which expands to    
           (apply (function (lambda (x) (* x x))) (list 1))
 
 Vital Lisp's internal FUNCTION also works like this besides the above 
 limitation on user-functions. VL's FUNCTION may be used with user functions.
-Therefore you can use the assumption:
+Therefore you can use the assumption:    
 
            (defun acomp-p () (eq (type bd4a) 'SUBR))
            (defun vl-p () (not (listp '(lambda () T))))
@@ -209,9 +209,10 @@ Therefore you can use the assumption:
 SELF MODIFYING CODE
 -------------------
 Is forbidden within compiled functions. Use instead plain lisp code.
-(simply append uncompiled code to compiled lispfiles)
+(simply append uncompiled code to compiled lispfiles)   
 
-Ex: COPY TEST.BI4+SELFMOD.LSP TEST.LSP
+Ex:   
+			COPY TEST.BI4+SELFMOD.LSP TEST.LSP
 
 
 MAXIMUM NUMBER OF ARGUMENTS
@@ -238,7 +239,7 @@ On the error message
 you can enhance the stacksize for compiled code with setting the environment
 variable COMPSTACK to a higher size
 
-Ex:
+Ex:   
 		SET COMPSTACK=8000
 
 
@@ -246,7 +247,7 @@ Ex:
 Mixed code
 ----------
 If you intend to use compiled and uncompiled code
-the following construct would be useful:
+the following construct would be useful:   
 
 		(if (not BD4A)
 		  (defun special (x) nil)
