@@ -166,14 +166,14 @@ You will need to specify
 QUOTE LAMBDA -> FUNCTION LAMBDA  [changed July 98]  
 ==================================================  
 
-In some cases   
-            (apply '(lambda (x) (* x x)) (list 1))
+In some cases      
+            (apply '(lambda (x) (* x x)) (list 1))    
 
-which is the same as   
-            (apply (quote (lambda (x) (* x x))) (list 1))
+which is the same as       
+            (apply (quote (lambda (x) (* x x))) (list 1))    
 
-should be replaced with:   
-            (apply (function (lambda (x) (* x x))) (list 1))
+should be replaced with:        
+            (apply (function (lambda (x) (* x x))) (list 1))    
 
 Here FUNCTION is the same as a QUOTEd LAMBDA, but the compiler understands
 better what the programmer intends. So use the special form FUNCTION instead
@@ -186,10 +186,10 @@ which take function arguments such as apply or mapcar, but NOT with
 user supplied functions, such as (remove-if) or such.
 
 Note:
-In Common Lisp FUNCTION (or #') is used like this:   
-          (apply #'(lambda (x) (* x x)) (list 1))
-which expands to    
-          (apply (function (lambda (x) (* x x))) (list 1))
+In Common Lisp FUNCTION (or #') is used like this:      
+          (apply #'(lambda (x) (* x x)) (list 1))    
+which expands to       
+          (apply (function (lambda (x) (* x x))) (list 1))    
 
 Vital Lisp's internal FUNCTION also works like this besides the above 
 limitation on user-functions. VL's FUNCTION may be used with user functions.
